@@ -1,0 +1,3 @@
+[submodule "proxy-wasm-go-filter-template"]
+	path = proxy-wasm-go-filter-template
+	url = git@github.com:Kong/proxy-wasm-go-filter-template.git

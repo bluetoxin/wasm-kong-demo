@@ -1,0 +1,22 @@
+_format_version: "2.1"
+_transform: true
+
+services:
+- name: example_service
+  url: http://beebox 
+
+routes:
+- name: example_route
+  service: example_service
+  paths:
+  - /
+
+filter_chains:
+- name: my-wasm-demo
+  service: example_service
+  filters:
+    - name: my-go-filter
+      config: >-
+        {
+          "my_greeting": "Hello from Kong using WebAssembly!"
+        }
