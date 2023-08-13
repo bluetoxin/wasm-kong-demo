@@ -2,13 +2,18 @@
 Docker template for "https://github.com/Kong/proxy-wasm-go-filter-template"
 
 # Synopsis  
+Clone this repository:  
+```
+git clone --recursive git@github.com:bluetoxin/wasm-kong-demo.git
+cd wasm-kong-demo
+```
 Once you're in the cloned directory, initiate the Docker containers' creation using the following command:
 ```
 docker-compose up -d --build
 ```
 Send a test request to the proxy port through cURL:
 ```
-~# curl 127.0.0.1 -I
+curl 127.0.0.1 -I
 ```
 Your response will resemble the example below:
 
